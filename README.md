@@ -9,11 +9,24 @@ I modified these three methods to improve the performance as while as keep the p
 The following figure shows the result of sampling CPU through VisualVM:</br>
 ![Profilingbefore](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/Time_Before_Mod.png "Profiling before")
 </br>
-It can be seen that  Cell.toString(), MainPanel.convertToInt(), and MainPanel.runContinuous() are most time consuming.</br>
+It can be seen that  Cell.toString(), MainPanel.convertToInt(), and MainPanel.runContinuous() are most time consuming.</br></br>
+
+
 ### 2. Modify Cell.toString()</br>
-#### 2.1The folowing code shows how this method was modified. The loops with 10000 iterations was deleted since only the first character was returned.
+#### 2.1 The folowing code shows how this method was modified. The loops with 10000 iterations was deleted since only the first character was returned.
 ![CodeM1](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/Code_M1.png "Code M1")</br></br>
 #### 2.2 Then three unit tests were created and passed to make sure the method to work as expected. 
 ![TestM1](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/TestM1.png "Test M1")</br></br>
+#### 2.3 CPU sampling was ran again to prove the improvement of the performance with the modification. It can be seen that this method is not in the list of most time consuming methods any more.
+![TimeAfterM1](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/Time_After_M1.png "Time After M1")</br></br>
+
+
+### 3. MainPanel.convertToInt()</br>
+#### 3.1 The folowing code shows how this method was modified. There is no need to transform the input int variable to String, then add 1000 "0" characters before it, and at the end transform this long String back to Int again.
+![CodeM2](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/Code_M2.png "Code M2")</br></br>
+
+#### 2.2 Then three unit tests were created and passed to make sure the method to work as expected. 
+![TestM1](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/TestM1.png "Test M1")</br></br>
+
 #### 2.3 CPU sampling was ran again to prove the improvement of the performance with the modification. It can be seen that this method is not in the list of most time consuming methods any more.
 ![TimeAfterM1](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/Time_After_M1.png "Time After M1")</br></br>
