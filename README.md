@@ -25,8 +25,20 @@ It can be seen that  Cell.toString(), MainPanel.convertToInt(), and MainPanel.ru
 #### 3.1 The folowing code shows how this method was modified. There is no need to transform the input int variable to String, then add 1000 "0" characters before it, and at the end transform this long String back to Int again.
 ![CodeM2](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/Code_M2.png "Code M2")</br></br>
 
-#### 2.2 There is no unit test for this method since it is a private method. However, inputing an int variable and return the exactly int variable is safe. And an alternative way is just to delete this method.
-</br></br>
+#### 3.2 There is no unit test for this method since it is a private method. However, inputing an int variable and return the exactly int variable is safe. And an alternative way is just to delete this method. Several manual tests were performed by running the program and observing the process and result are expected. 
+</br>
 
-#### 2.3 CPU sampling was ran again to prove the improvement of the performance with the modification. It can be seen that this method is not in the list of most time consuming methods any more.
+#### 3.3 CPU sampling was ran again to prove the improvement of the performance with the modification. It can be seen that this method is not in the list of most time consuming methods any more.
+![TimeAfterM2](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/Time_After_M2.png "Time After M2")</br></br>
+
+
+
+### 4. MainPanel.convertToInt()</br>
+#### 4.1 The folowing code shows how this method was modified. There is no need to for a long thread sleep, which influence the performance.
+![CodeM3](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/Code_M3.png "Code M3")</br></br>
+
+#### 4.2 There is no unit test for this method since it is a private method. However, inputing an int variable and return the exactly int variable is safe. And an alternative way is just to delete this method. Several manual tests were performed by running the program and observing the process and result are expected. 
+</br>
+
+#### 4.3 CPU sampling was ran again to prove the improvement of the performance with the modification. It can be seen that this method is not in the list of most time consuming methods any more.
 ![TimeAfterM2](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/Time_After_M2.png "Time After M2")</br></br>
