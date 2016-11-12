@@ -6,8 +6,8 @@ In this project I profiled a Conway's Game of Life simulation. I found three maj
 I modified these three methods to improve the performance as while as keep the program to work exactly the same as before. I also created unit test for method Cell.toString(), and did manual tests for the other methods, MainPanel.convertToInt() and MainPanel.runContinuous(). The reason to do manual tests instead of unit tests for these two methods will be explained.</br>
 
 1.  Profiling (before) to determine which method is the most CPU-intensive</br>
-![Profiling before](https://github.com/jiaweixu/SlowLifeGUI/tree/master/material/Time_Before_Mod.png "Profiling before")
-
+![Profilingbefore](https://github.com/jiaweixu/SlowLifeGUI/tree/master/material/Time_Before_Mod.png "Profiling before")
+</br>
 2.  Adding pinning tests (in the form of manual and/or unit tests) to show that
     the functionality is unchanged by your modifications
 
