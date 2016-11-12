@@ -8,6 +8,10 @@ I modified these three methods to improve the performance as while as keep the p
 1.  Profiling (before) to determine which method is the most CPU-intensive</br>
 ![Profilingbefore](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/Time_Before_Mod.png "Profiling before")
 </br>
+It can be seen that  Cell.toString(), MainPanel.convertToInt(), and MainPanel.runContinuous() are most time consuming.</br>
+2. Modify Cell.toString()</br>
+The folowing code shows how this method was modified. The loops with 10000 iterations was deleted since only the first character was returned.
+![CodeM1](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/Code_M1.png "Code M1")
 2.  Adding pinning tests (in the form of manual and/or unit tests) to show that
     the functionality is unchanged by your modifications
 
