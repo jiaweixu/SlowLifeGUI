@@ -50,5 +50,5 @@ CPU sampling result with sleep time: 200
 ![TimeSleep2](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/Time_Sleep_2.png "Time Sleep 2")</br></br>
 
 ### 5. Profiling (after) showing that the rewrite helped make your method more performant</br>
-The 
+It can been seen that the three methods: Cell.toString(), MainPanel.convertToInt(), and MainPanel.runContinuous(), are no more performance issues.
 ![TimeAfterM](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/Time_After_M.PNG "Time After M")</br></br>
