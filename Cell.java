@@ -38,11 +38,14 @@ public class Cell extends JButton {
     public String toString() {
 	String toReturn = new String("");
 	String currentState = getText();
-	for (int j = 0; j < _maxSize; j++) {
-	    toReturn += currentState;
-	}
+	toReturn = currentState;
+// The loop is not necessary, and only the first character x was returned	
+//	for (int j = 0; j < _maxSize; j++) {
+//	    toReturn += currentState;
+//	}
 	if (toReturn.substring(0,1).equals("X")) {
-	    return toReturn.substring(0,1);
+//	    return toReturn.substring(0,1);
+		return toReturn.substring(0,1);
 	} else {
 	    return ".";
 	}
