@@ -40,7 +40,9 @@ It can be seen that  Cell.toString(), MainPanel.convertToInt(), and MainPanel.ru
 #### 4.2 There is no unit test for this method since it is a void method and does not return any value. Several manual tests were performed by running the program and observing the process and result as expected. 
 </br>
 
-#### 4.3 CPU sampling was ran again to prove the improvement of the performance with the modification. It can be seen that reducing the sleep time from 200 to 20, and to 2, will largely reduce the percentage of self time of this methods, from 96.8% to 87.9%, and to 55.4%<br>CPU sampling result with sleep time: 200
+#### 4.3 CPU sampling was ran again to prove the improvement of the performance with the modification. It can be seen that reducing the sleep time from 200 to 20, and to 2, will largely reduce the percentage of self time of this methods, from 96.8% to 87.9%, and to 55.4%
+<br>
+<br>CPU sampling result with sleep time: 200
 ![TimeSleep200](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/Time_Sleep_200.png "Time Sleep 200")</br>
 <br>CPU sampling result with sleep time: 20
 ![TimeSleep20](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/Time_Sleep_20.png "Time Sleep 20")</br>
