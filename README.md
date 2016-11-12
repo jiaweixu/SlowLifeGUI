@@ -48,3 +48,7 @@ CPU sampling result with sleep time: 200
 ![TimeSleep20](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/Time_Sleep_20.png "Time Sleep 20")</br>
 <br>CPU sampling result with sleep time: 2
 ![TimeSleep2](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/Time_Sleep_2.png "Time Sleep 2")</br></br>
+
+### 5. Profiling (after) showing that the rewrite helped make your method more performant</br>
+The 
+![TimeAfterM](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/Time_After_M.png "Time After M")</br></br>
