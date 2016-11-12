@@ -7,6 +7,7 @@ I modified these three methods to improve the performance as while as keep the p
 
 1.  Profiling (before) to determine which method is the most CPU-intensive</br>
 ![Profilingbefore](https://github.com/jiaweixu/SlowLifeGUI/tree/master/material/Time_Before_Mod.png "Profiling before")
+![running result](https://github.com/jiaweixu/CitySim9002/blob/master/Results/result_screen_shot.png "Running Results")
 </br>
 2.  Adding pinning tests (in the form of manual and/or unit tests) to show that
     the functionality is unchanged by your modifications
