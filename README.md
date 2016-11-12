@@ -15,3 +15,5 @@ The folowing code shows how this method was modified. The loops with 10000 itera
 ![CodeM1](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/Code_M1.png "Code M1")</br></br>
 Then three unit tests were created and passed to make sure the method to work as expected. 
 ![TestM1](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/TestM1.png "Test M1")</br></br>
+CPU sampling was ran again to prove the improvement of the performance with the modification. It can be seen that this method is not in the list of most time consuming methods any more.
+![TimeAfterM1](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/Time_After_M1.png "Time After M1")</br></br>
