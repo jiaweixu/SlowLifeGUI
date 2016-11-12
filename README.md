@@ -51,4 +51,4 @@ CPU sampling result with sleep time: 200
 
 ### 5. Profiling (after) showing that the rewrite helped make your method more performant</br>
 The 
-![TimeAfterM](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/Time_After_M.png "Time After M")</br></br>
+![TimeAfterM](https://github.com/jiaweixu/SlowLifeGUI/blob/master/material/Time_After_M.PNG "Time After M")</br></br>
